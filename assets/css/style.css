@@ -1,0 +1,33 @@
+/* Global styles */
+
+.options {
+    width: 500px;
+    height: 50px;
+    background-color: lightblue;
+}
+
+.battleship {
+    height: 10px;
+    margin: 3px;
+    background-color: grey;
+}
+
+.destroyer-placeholder {
+    width: 40px;
+}
+
+.submarine-placeholder {
+    width: 30px;
+}
+
+.carrier-placeholder {
+    width: 50px;
+}
+
+.minehunter-placeholder {
+    width: 20px;
+}
+
+.frigate-placeholder {
+    width: 30px;
+}
