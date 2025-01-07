@@ -3,6 +3,22 @@
 .battleboard {
     width: 200px;
     height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid lightblue;
+}
+
+#battleboard {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid lightblue;
+    box-sizing: border-box;
 }
 
 #ships {
