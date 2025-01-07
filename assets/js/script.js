@@ -14,7 +14,7 @@ function rotate() {
     battleshipOptions.forEach(battleshipOption => battleshipOption.style.transform = `rotate(${angle}deg)`);
 };
 
-// Battleboard function
+// Battleboard creation function
 const width = 10;
 
 function createBattleboard(color, user) {
