@@ -57,7 +57,7 @@ const ships = [destroyer, submarine, carrier, minehunter, frigate];
 
 function addShip(ship) {
     const allShipBlocks = document.querySelectorAll("computer div");
-    let randomBoolean = math.random() < 0.5;
+    let randomBoolean = Math.random() < 0.5;
     let isHorizontal = randomBoolean;
     let randomStart = Math.floor(Math.random() * width * width);
 
@@ -70,12 +70,14 @@ function addShip(ship) {
             shipBlocks.push(allShipBlocks[Number(randomStart) = i * width]);
         };
     };
+
+    shipBlocks.forEach(shipBlock => {
+        shipBlock.classList.add(ship.name);
+        shipBlock.classList.add("taken");
+    });
+
 };
 
-shipBlocks.forEach(shipBlock => {
-    shipBlock.classList.add(ship.name);
-    shipBlock.classList.add("taken");
-});
 
 
-addShip(ships);
+ships.forEach(ship => addShip(ship));
